@@ -1,5 +1,6 @@
 import streamlit as st
 # test comment
+
 if "role" not in st.session_state:
     st.session_state.role = None
 
@@ -64,7 +65,7 @@ visualization_pages = [visualization,maps,maps2]
 ml_pages = [ml]
 eda_pages = [eda]
 
-st.title("Data Analytics AI")
+st.title("Data Analytics AI - Team 3")
 st.logo("images/horizontal_blue.png", icon_image="images/icon_blue.png")
 
 page_dict = {}
