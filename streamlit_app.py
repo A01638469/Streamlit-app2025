@@ -25,6 +25,7 @@ def login():
 
 def logout():
     st.header("Log out")
+    st.image("images/cdmx.jpg")
 
     if st.button("Log out"):
         st.session_state.role = None
