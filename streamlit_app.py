@@ -2,12 +2,12 @@ import streamlit as st
 # test comment
 
 st.markdown("""
-<style>
-/* For the entire app */
-.reportview-container {
-    background: linear-gradient(to right, #496C9F, #061E42);
-}
-"""
+    <style>
+    html, body, [class*="css"]  {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 
 if "role" not in st.session_state:
     st.session_state.role = None
@@ -16,6 +16,7 @@ ROLES = [None, "PC", "Professor", "Team"]
 
 def login():
     st.header("Log in")
+    st.image("images/login_icon.png")
     role = st.selectbox("Choose your role", ROLES)
 
     if st.button("Log in"):
